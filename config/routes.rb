@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   post 'auth/login', to: 'authentication#authenticate'
   post 'signup', to: 'users#create'
+  post 'courses/:id/enroll', to: 'courses#enroll'
+  get  'user/my_courses', to: 'users#enrolled_courses'
 end

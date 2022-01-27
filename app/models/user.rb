@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_many :courses, through: :user_courses
 
   enum expertise_level: { beginner: 0, intermediate: 1, expert: 2 }
+  enum role: { student: 0, author: 1, admin: 2 }
   # validations
   validates_presence_of :first_name, :last_name, :role, :email, :password_digest
 end
