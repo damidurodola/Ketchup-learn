@@ -1,12 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe 'Ketchup Learn', type: :request do
+  let(:user) { create(:user) }
   let!(:courses) { create_list(:course, 5) }
+  let(:headers) { valid_headers }
 
   describe 'GET /courses' do
     # make HTTP get request
 
-    before { get '/courses' }
+    before { get '/courses', params: {}, headers: headers }
 
     it 'returns courses' do
       expect(json).not_to be_empty

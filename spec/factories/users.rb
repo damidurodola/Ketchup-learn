@@ -5,5 +5,6 @@ FactoryBot.define do
     email 'dee@mail.com'
     expertise_level 0
     password 'damidee'
+    role 'student'
   end
 end

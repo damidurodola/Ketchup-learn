@@ -1,7 +1,7 @@
 class CoursesController < ApplicationController
   # GET /todos
   def index
-    @courses = Course.all
+    @courses = current_user.user_courses # fix this
     json_response(@courses)
   end
 
