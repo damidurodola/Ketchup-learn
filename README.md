@@ -1,24 +1,20 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+KetchupLearn
 
 * Ruby version
-
-* System dependencies
-
-* Configuration
+  2.7.1
 
 * Database creation
+  rails db:create
+  rails db:migrate
 
-* Database initialization
 
 * How to run the test suite
+  `bundle exec rspec`
 
-* Services (job queues, cache servers, search engines, etc.)
+* Routes
 
-* Deployment instructions
+  https://www.getpostman.com/collections/b5ba0bb2ab191d4925c4
 
-* ...
+* Heroku 
+ https://ketchup-learn.herokuapp.com/
