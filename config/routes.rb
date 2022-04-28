@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   post 'signup', to: 'users#create'
   post 'courses/:id/enroll', to: 'courses#enroll'
   get  'user/my_courses', to: 'users#enrolled_courses'
+  get 'users/', to: 'user#index'
+  get 'courses', to: 'courses#index'
 end
